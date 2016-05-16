@@ -155,13 +155,13 @@ gulp.task('wiredep', function () {
 gulp.task('inject', function () {
   var target = gulp.src(paths.views.main);
   var sources = gulp.src([
-    yeoman.app + '/scripts/{,/*}/*.js',
-    yeoman.app + '/styles/{,/*}/*.css',
-    '!' + yeoman.app + '/styles/skins/**',
-    '!' + yeoman.app + '/styles/**/*.min.css'
-  ], {read: false});
-  return target.pipe($.inject(sources))
-    .pipe(gulp.dest(yeoman.app));
+    yeoman.app + '/scripts/{,/*}/*.js'
+  ], {
+    read: false
+  });
+  return target.pipe($.inject(sources, {
+    relative: true
+  })).pipe(gulp.dest(yeoman.app));
 });
 
 ///////////

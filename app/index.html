@@ -1,28 +1,32 @@
 <!doctype html>
-<html ng-app="angularApp">
+<html>
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>angular-app</title>
   <meta name="description" content="">
-  <meta name="viewport" content="width=device-width">
-  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- build:css(.) styles/vendor.css -->
   <!-- bower:css -->
   <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
   <link rel="stylesheet" href="/bower_components/Ionicons/css/ionicons.css" />
+  <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.css" />
   <link rel="stylesheet" href="/bower_components/jquery-treetable/css/jquery.treetable.css" />
-  <link rel="stylesheet" href="/bower_components/jquery-treetable/css/jquery.treetable.theme.default.css" />
   <!-- endbower -->
   <!-- endbuild -->
   <!-- build:css(.tmp) styles/main.css -->
   <!-- inject:css -->
   <!-- endinject -->
-  <link rel="stylesheet" href="styles/AdminLTE.css">
+  <link rel="stylesheet" href="styles/AdminLTE.min.css">
+  <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
+        page. However, you can choose any other skin. Make sure you
+        apply the skin class to the body tag so the changes take effect.
+  -->
   <link rel="stylesheet" href="styles/skins/skin-blue.min.css">
   <link rel="stylesheet" href="styles/jquery.treetable.theme.adminLTE.css">
   <!-- endbuild -->
 </head>
-<body ng-app="angularAppApp">
+<body ng-app="angularApp" class="hold-transition skin-blue sidebar-mini">
 <!--[if lte IE 8]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
   your browser</a> to improve your experience.</p>
@@ -42,10 +46,13 @@
 
 <!-- build:js({.tmp,app}) scripts/scripts.js -->
 <!-- inject:js -->
+<script src="scripts/adminLTE.js"></script>
 <script src="scripts/app.js"></script>
+<script src="scripts/directives/main.direcive.js"></script>
 <script src="scripts/controllers/index.controller.js"></script>
 <script src="scripts/controllers/main.controller.js"></script>
 <script src="scripts/routes/index.route.js"></script>
+<script src="scripts/services/underscore.js"></script>
 <!-- endinject -->
 <!-- endbuild -->
 </body>

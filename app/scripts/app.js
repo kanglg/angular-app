@@ -9,6 +9,7 @@
  */
 angular.module('angularApp', [
   'ngResource',
+  'underscore',
   'ui.router'
 ]).config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise("/index");

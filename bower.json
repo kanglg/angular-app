@@ -2,6 +2,7 @@
   "name": "angular-app",
   "version": "0.0.0",
   "dependencies": {
+    "jquery": "^2.2.3",
     "angular": "^1.4.0",
     "bootstrap": "^3.2.0",
     "angular-resource": "^1.4.0",
@@ -22,6 +23,17 @@
         "less/bootstrap.less",
         "dist/css/bootstrap.css",
         "dist/js/bootstrap.js"
+      ]
+    },
+    "font-awesome": {
+      "main": [
+        "css/font-awesome.css"
+      ]
+    },
+    "jquery-treetable": {
+      "main": [
+        "jquery.treetable.js",
+        "css/jquery.treetable.css"
       ]
     }
   }

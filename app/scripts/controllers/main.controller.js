@@ -4,6 +4,9 @@
 (function() {
   'use strict';
   angular.module('angularApp').controller('MainController', [function() {
-    
+    var _this = this;
+    this.options = {
+      name: 'hello'
+    };
   }]);
 })();

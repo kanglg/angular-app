@@ -7,5 +7,5 @@ angular.module('angularApp').config(['$stateProvider', function($stateProvider) 
     url: '^/index',
     parent: 'main',
     templateUrl: 'views/index.html'
-  })
+  });
 }]);

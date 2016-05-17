@@ -64,7 +64,7 @@ $.AdminLTE.options = {
   //before AdminLTE's app.js
   enableFastclick: true,
   //Control Sidebar Options
-  enableControlSidebar: true,
+  enableControlSidebar: false,
   controlSidebarOptions: {
     //Which button should trigger the open/close event
     toggleBtnSelector: "[data-toggle='control-sidebar']",
@@ -160,11 +160,11 @@ $(function () {
   $.AdminLTE.layout.activate();
 
   //Enable sidebar tree view controls
-  $.AdminLTE.tree('.sidebar');
+  //$.AdminLTE.tree('.sidebar');
 
   //Enable control sidebar
   if (o.enableControlSidebar) {
-    $.AdminLTE.controlSidebar.activate();
+    $.AdminLTE.controlSidebar.activatevate();
   }
 
   //Add slimscroll to navbar dropdown
